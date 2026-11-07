@@ -1,1 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Provincial Transit Safety and Cleanliness Act</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root{--paper:#f5f8fa;--ink:#12263a;--muted:#4f6272;--route:#0b7d6b;--on-route:#fff;--signal:#f0a800;--line:#d3dee7;--plate:#12263a;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#0e1923;--ink:#e7eff6;--muted:#9fb2c2;--route:#3fd0a9;--on-route:#06211a;--line:#25394a;--plate:#1d3550;color-scheme:dark}}
+:root[data-theme="dark"]{--paper:#0e1923;--ink:#e7eff6;--muted:#9fb2c2;--route:#3fd0a9;--on-route:#06211a;--line:#25394a;--plate:#1d3550;color-scheme:dark}
+html{background:#0e2238;scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;padding-bottom:4.5rem;background:var(--paper);color:var(--ink);font:400 1.0625rem/1.65 "Atkinson Hyperlegible",system-ui,sans-serif}
+.wrap{max-width:46rem;margin:0 auto;padding:0 1.25rem}
+h1,h2,h3{font-family:Archivo,"Helvetica Neue",Arial,sans-serif;line-height:1.1;margin:0}
+p{margin:0 0 1rem;max-width:40rem}
+.hero{background:#0e2238;color:#fff;padding-top:3rem;overflow:hidden}
+.badge{display:inline-block;background:#13b58f;color:#06211a;font-weight:700;font-size:.9rem;padding:.25rem .7rem;border-radius:.4rem;margin-bottom:1rem}
+h1{font-weight:800;font-size:clamp(2.1rem,8vw,3.6rem);letter-spacing:-.02em;text-wrap:balance}
+.lede{font-size:1.2rem;color:#b9cbdc;max-width:34rem;margin:1rem 0 0}
+.art{height:3.6rem;position:relative;margin-top:1.75rem}
+.tr{position:absolute;left:1.25rem;bottom:0;animation:arrive 2.4s cubic-bezier(.12,.75,.2,1) both}
+@keyframes arrive{from{transform:translateX(-110vw)}to{transform:none}}
+.rails{height:1.4rem;background:linear-gradient(#8fa6bb,#8fa6bb) top/100% 4px no-repeat,repeating-linear-gradient(90deg,#4d6479 0 10px,transparent 10px 28px) bottom/100% 9px no-repeat}
+.goals{display:grid;grid-template-columns:repeat(auto-fit,minmax(13rem,1fr));gap:1.5rem 1.25rem;margin:2rem 0 0}
+.goals>div{display:grid;grid-template-columns:2.6rem 1fr;column-gap:.8rem;align-items:start}
+.bl{grid-row:span 2;display:grid;place-items:center;width:2.6rem;height:2.6rem;border-radius:50%;font:800 1.2rem Archivo,Arial,sans-serif;color:#fff;animation:pop .5s cubic-bezier(.3,1.6,.5,1) both;animation-delay:var(--d)}
+.b1{background:var(--route);color:var(--on-route)}.b2{background:var(--signal);color:#12263a}.b3{background:#2563eb}
+@keyframes pop{from{transform:scale(0)}to{transform:none}}
+.goals h3{font-size:1.1rem;font-weight:700;align-self:end}
+.goals p{margin:.2rem 0 0;color:var(--muted);font-size:.98rem;line-height:1.5}
+main{position:relative;padding-left:2.4rem;margin-top:3rem}
+main::before{content:"";position:absolute;left:.425rem;top:1.1rem;bottom:.6rem;width:6px;border-radius:3px;background:var(--line)}
+.fill{position:absolute;left:.425rem;top:1.1rem;width:6px;border-radius:3px;background:var(--route);height:calc((100% - 1.7rem)*var(--p,0));transition:height .2s linear}
+.rider{position:absolute;z-index:2;left:-.1375rem;top:calc(1.1rem + (100% - 1.7rem)*var(--p,0));width:1.5rem;height:1.5rem;margin-top:-.75rem;border-radius:50%;background:var(--signal);border:4px solid var(--plate);transition:top .2s linear}
+main>section{position:relative;margin:0 0 3.2rem}
+main>section:last-of-type{margin-bottom:0}
+main>section::before{content:"";position:absolute;z-index:1;left:-2.4rem;top:.5rem;width:1.2rem;height:1.2rem;border-radius:50%;background:var(--paper);border:4px solid var(--line);transition:background .3s,border-color .3s}
+main>section.on::before{background:var(--route);border-color:var(--route)}
+h2{display:inline-block;background:var(--plate);color:#fff;padding:.4rem .85rem;border-radius:.35rem;font-size:1.3rem;font-weight:700;margin-bottom:1rem;box-shadow:inset 0 -4px 0 var(--route)}
+.c{color:var(--muted);font-size:.88em}
+.do{list-style:none;padding:0;margin:1rem 0;max-width:40rem}
+.do li{position:relative;padding-left:1.4rem;margin:.6rem 0}
+.do li::before{content:"";position:absolute;left:0;top:.6em;width:.55rem;height:.55rem;background:var(--route);border-radius:2px}
+.note{border-left:4px solid var(--signal);padding:.1rem 0 .1rem 1rem;margin:1.25rem 0;max-width:40rem}
+.note p{margin:0}
+.signs{display:flex;flex-wrap:wrap;gap:.5rem;list-style:none;padding:0;margin:0 0 1.25rem}
+.signs li{background:var(--route);color:var(--on-route);font-weight:700;padding:.35rem .8rem;border-radius:.4rem}
+.stat{max-width:36rem;margin:1.25rem 0}
+.stat>div+div{margin-top:.9rem}
+.row{display:flex;justify-content:space-between;font-weight:700;margin-bottom:.3rem}
+.track{height:.9rem;border-radius:.45rem;background:var(--line);overflow:hidden}
+.track i{display:block;width:var(--w);height:100%;border-radius:.45rem;background:var(--route)}
+.track.t i{background:var(--signal);transition-delay:.25s}
+.js .track i{width:0;transition:width 1.3s cubic-bezier(.2,.8,.2,1)}
+.js .in .track i{width:var(--w)}
+footer{border-top:1px solid var(--line);margin-top:3.5rem;padding:2rem 0 2rem;color:var(--muted);font-size:.92rem}
+footer h3{font-size:1rem;color:var(--ink)}
+footer ul{padding-left:1.1rem;margin:.5rem 0 0}
+.led{position:fixed;z-index:5;left:0;right:0;bottom:0;display:grid;grid-template-columns:1fr 1fr;gap:1rem;background:#0a141d;border-top:3px solid var(--route);padding:.55rem max(1.25rem,calc((100vw - 46rem)/2 + 1.25rem)) calc(.55rem + env(safe-area-inset-bottom,0px));color:#ffb81c;font-family:Archivo,Arial,sans-serif}
+.led span{display:block;font-size:.68rem;font-weight:700;color:#8fa6bb}
+.led b{display:block;font-size:.9rem;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.led div:last-child{text-align:right}
+.f{animation:flip .4s}
+@keyframes flip{from{opacity:0;transform:translateY(.5em)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <span class="badge">Private Member’s Bill for Ontario</span>
+    <h1>Provincial Transit Safety and Cleanliness Act</h1>
+    <p class="lede">A bill to keep every public transit station in Ontario clean, safe, and well maintained.</p>
+  </div>
+  <div class="wrap art">
+    <svg class="tr" width="230" height="57" viewBox="0 0 260 64" aria-hidden="true">
+      <rect x="2" y="4" width="256" height="48" rx="14" fill="#f4f7fa"/>
+      <rect x="2" y="32" width="256" height="8" fill="#13b58f"/>
+      <g fill="#1c3a57"><rect x="18" y="12" width="34" height="18" rx="5"/><rect x="62" y="12" width="34" height="18" rx="5"/><rect x="106" y="12" width="34" height="18" rx="5"/><rect x="150" y="12" width="34" height="18" rx="5"/><rect x="200" y="12" width="44" height="18" rx="6"/></g>
+      <g fill="#0e2238" stroke="#8fa6bb" stroke-width="2"><circle cx="44" cy="57" r="6"/><circle cx="96" cy="57" r="6"/><circle cx="168" cy="57" r="6"/><circle cx="220" cy="57" r="6"/></g>
+      <circle cx="254" cy="42" r="4" fill="#ffd966"/>
+    </svg>
+  </div>
+  <div class="rails"></div>
+</header>
+
+<div class="wrap">
+  <div class="goals">
+    <div><b class="bl b1" style="--d:1.6s">C</b><h3>Clean</h3><p>Cleaner stations, trains, buses, and streetcars across the province.</p></div>
+    <div><b class="bl b2" style="--d:1.8s">S</b><h3>Safe 24/7</h3><p>Safer rides at all hours, with an officer at every busy station.</p></div>
+    <div><b class="bl b3" style="--d:2s">M</b><h3>Well maintained</h3><p>Stops and stations kept in good repair for everyone.</p></div>
+  </div>
+
+<main>
+  <i class="fill"></i><i class="rider"></i>
+  <section>
+    <h2>Why Ontario should pass it</h2>
+    <p>Public transit is mainly managed and advised at the provincial and municipal levels <span class="c">(Financial Accountability Office of Ontario, n.d.)</span>. Ontario’s government has the power to set safety and cleanliness standards that would improve transit everywhere in the province. Because the bill affects transit across Ontario, the provincial government is the right level to pass it, so every passenger can feel safe and comfortable at every station.</p>
+    <div class="note"><p><strong>Political lean.</strong> This bill leans liberal. It focuses on improving public services, making them more accessible, and improving the everyday experience of taking transit. <span class="c">(Better, Cleaner Transportation, n.d.)</span></p></div>
+  </section>
+
+  <section>
+    <h2>What the Act would do</h2>
+    <p>It would require all public transit systems across Ontario to:</p>
+    <ul class="do">
+      <li>Keep stations, trains, buses, and streetcars clean</li>
+      <li>Fix maintenance problems as soon as possible</li>
+      <li>Have at least one law enforcement officer at every busy station, so riders feel safer early in the morning and late at night</li>
+    </ul>
+    <p>Together, these create basic standards that transit agencies must follow to make transit easier, safer, and cleaner for all passengers.</p>
+  </section>
+
+  <section>
+    <h2>Why it matters</h2>
+    <p>Millions of people across Ontario rely on public transit every day to get to school, work, and other important places <span class="c">(Financial Accountability Office of Ontario, n.d.)</span>. Dirty stations, broken elevators, poor lighting, and poorly maintained waiting areas make transit unpleasant, hard to navigate, and, most importantly, unsafe.</p>
+    <p>People who spend that much time on transit should be able to expect a clean, comfortable environment.</p>
+  </section>
+
+  <section>
+    <h2>Who benefits</h2>
+    <ul class="signs"><li>Students</li><li>Workers</li><li>Seniors</li><li>People with disabilities</li></ul>
+    <p>Working elevators make stations easier to reach for people using wheelchairs, parents with strollers, and seniors. Better lighting, cleaner waiting areas, and officers at stations make stations more welcoming.</p>
+    <p>Over time, these improvements could encourage more people to ride instead of drive, which would reduce traffic congestion and greenhouse gas pollution <span class="c">(Pei, 2021)</span>. It could also improve the overall reputation of public transit.</p>
+  </section>
+
+  <section>
+    <h2>What the evidence says</h2>
+    <p>The TTC’s 2024–2028 corporate plan reports how many customers were satisfied with subway station cleanliness in 2023, compared with its own target <span class="c">(TTC, n.d.)</span>.</p>
+    <div class="stat">
+      <div><div class="row"><span>Satisfied in 2023</span><span>60%</span></div><div class="track" aria-hidden="true"><i style="--w:60%"></i></div></div>
+      <div><div class="row"><span>TTC target</span><span>80%</span></div><div class="track t" aria-hidden="true"><i style="--w:80%"></i></div></div>
+    </div>
+    <p>That leaves 40% who weren’t satisfied, which supports requiring transit agencies to maintain cleaner stations, trains, and other areas.</p>
+    <div class="note"><p>Last winter, CityNews reported that Brad Bradford called for police at every single TTC station to improve safety and reduce unnecessary incidents. It is the same idea as having an officer at every stop under this bill. <span class="c">(Marchesan, 2026)</span></p></div>
+  </section>
+
+  <section>
+    <h2>The bottom line</h2>
+    <p>The Provincial Transit Safety and Cleanliness Act would improve the daily lives of transit users and help make Ontario’s transportation system cleaner, safer, and more reliable for everyone in Ontario.</p>
+  </section>
+</main>
+
+<footer>
+  <h3>Sources</h3>
+  <ul>
+    <li>Better, Cleaner Transportation, n.d.</li>
+    <li>Financial Accountability Office of Ontario, n.d.</li>
+    <li>Marchesan, 2026 (CityNews)</li>
+    <li>Pei, 2021</li>
+    <li>TTC, n.d. (2024–2028 corporate plan)</li>
+  </ul>
+</footer>
+</div>
+
+<div class="led" aria-hidden="true">
+  <div><span>Now</span><b id="now">Boarding</b></div>
+  <div><span>Next stop</span><b id="next">Why Ontario should pass it</b></div>
+</div>
+
+<script>
+(function(){
+var main=document.querySelector('main'),secs=[].slice.call(main.querySelectorAll('section')),
+now=document.getElementById('now'),nxt=document.getElementById('next'),
+names=secs.map(function(s){return s.querySelector('h2').textContent});
+function set(el,t){if(el.textContent!==t){el.textContent=t;el.classList.remove('f');void el.offsetWidth;el.classList.add('f')}}
+function upd(){
+  var r=main.getBoundingClientRect(),y=window.innerHeight*.45,
+  p=Math.min(1,Math.max(0,(y-r.top-18)/(r.height-27))),cur=-1;
+  main.style.setProperty('--p',p.toFixed(4));
+  secs.forEach(function(s,i){var on=s.getBoundingClientRect().top<y;s.classList.toggle('on',on);if(on)cur=i});
+  set(now,cur<0?'Boarding':names[cur]);
+  set(nxt,cur<0?names[0]:(cur<names.length-1?names[cur+1]:'End of the line'));
+}
+addEventListener('scroll',upd,{passive:true});addEventListener('resize',upd);upd();
+var st=document.querySelectorAll('.stat');
+if('IntersectionObserver' in window){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.4});
+  st.forEach(function(s){io.observe(s)});
+}else{st.forEach(function(s){s.classList.add('in')})}
+})();
+</script>
+</body>
+</html>
 
